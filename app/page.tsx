@@ -41,7 +41,7 @@ export default function Home() {
           </Link>
           
           <div className="flex items-center gap-4">
-            <Link href="/rules" className="hover:text-white transition-colors flex items-center gap-1">
+            <Link href="/regeln" className="hover:text-white transition-colors flex items-center gap-1">
               <FiBook className="w-5 h-5" />
               <span className="hidden sm:inline">Regeln</span>
             </Link>
@@ -69,14 +69,14 @@ export default function Home() {
 
               <div className="flex gap-4">
                 <Link 
-                  href="/join" 
+                  href="#so-nimmst-du-teil" 
                   className="px-8 py-4 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition-all flex items-center"
                 >
                   <FiArrowRight className="mr-3" />
                   Jetzt beitreten
                 </Link>
                 <Link 
-                  href="/rules" 
+                  href="/regeln" 
                   className="px-8 py-4 border border-white/20 rounded-lg font-medium hover:border-white/40 transition-all"
                 >
                   Regeln lesen
@@ -114,8 +114,8 @@ export default function Home() {
               <FiUsers className="w-12 h-12 mb-6 text-white" />
               <h3 className="text-2xl font-semibold mb-4">Wer wir sind</h3>
               <p className="text-gray-300">
-                Eine engagierte Community von Roleplay-Enthusiasten, die seit 2020 qualitativ hochwertige FiveM-Erlebnisse schafft.
-                uns ist es Wichtig den Spieler ein einzigartiges Erlebnis zu bieten und das RP zu fördern.
+                Eine engagierte Community von Roleplay-Enthusiasten, die seit 2020 qualitativ hochwertige FiveM-Erlebnisse schafft. 
+                Uns ist es wichtig, den Spielern ein einzigartiges Erlebnis zu bieten und das RP zu fördern.
               </p>
             </div>
 
@@ -123,9 +123,10 @@ export default function Home() {
               <FiShield className="w-12 h-12 mb-6 text-white" />
               <h3 className="text-2xl font-semibold mb-4">Was wir bieten</h3>
               <ul className="text-gray-300 list-disc pl-5 space-y-2">
-                <li>Realistisches Wirtschaftssystem</li>
-                <li>Über 30+ einzigartige Jobs</li>
-                <li>Dynamisches Wirtschaftssystem</li>
+                <li>Realismusnahe Wirtschaft</li>
+                <li>Viele legale & illegale Aktivitäten</li>
+                <li>Dynamische Fahrzeugeigenschaften</li>
+                <li>Und vieles mehr</li>
               </ul>
             </div>
 
@@ -133,7 +134,7 @@ export default function Home() {
               <FiMic className="w-12 h-12 mb-6 text-white" />
               <h3 className="text-2xl font-semibold mb-4">Voice System</h3>
               <p className="text-gray-300">
-                Wir verwenden YACA-Voice (Teamspeak) für realistisches, positionsbasiertes Voice-RP mit Crystal-Clear Audioqualität.
+                Wir verwenden YACA-Voice (TeamSpeak) für realistisches, positionsbasiertes Voice-RP mit kristallklarer Audioqualität.
               </p>
             </div>
           </div>
@@ -151,10 +152,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { icon: FiClock, title: "24/7 Support", text: "Hochverfügbarer Server-Cluster" },
-              { icon: FiMapPin, title: "Erweiternde Karten", text: "Ständig weiterentwickelnde Spielwelt" },
-              { icon: FiShield, title: "Sicherheit", text: "Aktives Admin-Team & Anti-Cheat-Maßnahmen" },
-              { icon: FiUsers, title: "Community", text: "Täglich 30+ aktive Spieler" },
+              { icon: FiClock, title: "Zuverlässiger Support", text: "Engagiertes & erfahrenes Server-Team" },
+              { "icon": FiMapPin, "title": "Dynamische Spielwelt", "text": "Ständig erweiternde Karten & einzigartige Custom-Features" },
+              { "icon": FiShield, "title": "Sicherheit & Fairplay", "text": "Aktives Admin-Team, Anti-Cheat-Maßnahmen & durchdachte RP-Regeln" },
+              { "icon": FiUsers, "title": "Wachsende Community", "text": "Täglich 30+ aktive Roleplay-Spieler" }
             ].map((item, i) => (
               <motion.div 
               key={i}
@@ -178,7 +179,10 @@ export default function Home() {
               {/* How to Join Section */}
               <section className="container mx-auto px-4 mb-24">
             <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <section id="so-nimmst-du-teil">
             <h2 className="text-4xl font-bold mb-8 text-center">So nimmst du teil</h2>
+                </section>
+              
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center p-6 bg-black/20 rounded-xl">
@@ -269,7 +273,7 @@ export default function Home() {
       <SiTiktok className="w-8 h-8 text-white" />
         <div className="text-left">
           <h3 className="text-2xl font-semibold">TikTok</h3>
-          <p className="text-gray-400">Neuste Nachrichten!</p>
+          <p className="text-gray-400">Folge uns für Updates!</p>
         </div>
       </div>
   
@@ -309,11 +313,14 @@ export default function Home() {
           <div>
             <h4 className="text-white/90 font-medium mb-4">Quick Links</h4>
             <div className="space-y-2">
-              <Link href="/rules" className="block text-gray-400 hover:text-white text-sm">
+              <Link href="/regeln" className="block text-gray-400 hover:text-white text-sm">
                 Server-Regeln
               </Link>
-              <Link href="https://fivem.timelesscity.de" className="block text-gray-400 hover:text-white text-sm">
-                Beitreten
+              <Link href="/agb" className="block text-gray-400 hover:text-white text-sm">
+                AGB
+              </Link>
+              <Link href="/impressum" className="block text-gray-400 hover:text-white text-sm">
+                Impressum
               </Link>
             </div>
           </div>
